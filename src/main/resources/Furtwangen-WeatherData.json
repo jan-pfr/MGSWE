@@ -1,0 +1,172 @@
+{
+    "message": "accurate",
+    "cod": "200",
+    "count": 5,
+    "list": [
+        {
+            "id": 2923521,
+            "name": "Furtwangen im Schwarzwald",
+            "coord": {
+                "lat": 48.05,
+                "lon": 8.2
+            },
+            "main": {
+                "temp": 273.7,
+                "feels_like": 270.29,
+                "temp_min": 272.59,
+                "temp_max": 274.82,
+                "pressure": 1028,
+                "humidity": 82
+            },
+            "dt": 1614582420,
+            "wind": {
+                "speed": 1.61,
+                "deg": 114
+            },
+            "sys": { "country": "DE" },
+            "rain": null,
+            "snow": null,
+            "clouds": { "all": 0 },
+            "weather": [
+                {
+                    "id": 800,
+                    "main": "Clear",
+                    "description": "clear sky",
+                    "icon": "01d"
+                }
+            ]
+        },
+        {
+            "id": 2944845,
+            "name": "Breg",
+            "coord": {
+                "lat": 48.05,
+                "lon": 8.2
+            },
+            "main": {
+                "temp": 273.7,
+                "feels_like": 270.29,
+                "temp_min": 272.59,
+                "temp_max": 274.82,
+                "pressure": 1028,
+                "humidity": 82
+            },
+            "dt": 1614582420,
+            "wind": {
+                "speed": 1.61,
+                "deg": 114
+            },
+            "sys": { "country": "DE" },
+            "rain": null,
+            "snow": null,
+            "clouds": { "all": 0 },
+            "weather": [
+                {
+                    "id": 800,
+                    "main": "Clear",
+                    "description": "clear sky",
+                    "icon": "01d"
+                }
+            ]
+        },
+        {
+            "id": 2898135,
+            "name": "Hübschental",
+            "coord": {
+                "lat": 48.05,
+                "lon": 8.15
+            },
+            "main": {
+                "temp": 273.7,
+                "feels_like": 270.26,
+                "temp_min": 272.59,
+                "temp_max": 274.82,
+                "pressure": 1028,
+                "humidity": 82
+            },
+            "dt": 1614582416,
+            "wind": {
+                "speed": 1.66,
+                "deg": 114
+            },
+            "sys": { "country": "DE" },
+            "rain": null,
+            "snow": null,
+            "clouds": { "all": 0 },
+            "weather": [
+                {
+                    "id": 800,
+                    "main": "Clear",
+                    "description": "clear sky",
+                    "icon": "01d"
+                }
+            ]
+        },
+        {
+            "id": 2913414,
+            "name": "Gütenbach",
+            "coord": {
+                "lat": 48.05,
+                "lon": 8.15
+            },
+            "main": {
+                "temp": 273.7,
+                "feels_like": 270.26,
+                "temp_min": 272.59,
+                "temp_max": 274.82,
+                "pressure": 1028,
+                "humidity": 82
+            },
+            "dt": 1614582416,
+            "wind": {
+                "speed": 1.66,
+                "deg": 114
+            },
+            "sys": { "country": "DE" },
+            "rain": null,
+            "snow": null,
+            "clouds": { "all": 0 },
+            "weather": [
+                {
+                    "id": 800,
+                    "main": "Clear",
+                    "description": "clear sky",
+                    "icon": "01d"
+                }
+            ]
+        },
+        {
+            "id": 6555822,
+            "name": "Gütenbach",
+            "coord": {
+                "lat": 48.05,
+                "lon": 8.15
+            },
+            "main": {
+                "temp": 273.7,
+                "feels_like": 270.26,
+                "temp_min": 272.59,
+                "temp_max": 274.82,
+                "pressure": 1028,
+                "humidity": 82
+            },
+            "dt": 1614582883,
+            "wind": {
+                "speed": 1.66,
+                "deg": 114
+            },
+            "sys": { "country": "DE" },
+            "rain": null,
+            "snow": null,
+            "clouds": { "all": 0 },
+            "weather": [
+                {
+                    "id": 800,
+                    "main": "Clear",
+                    "description": "clear sky",
+                    "icon": "01d"
+                }
+            ]
+        }
+    ]
+}
