@@ -8,27 +8,20 @@ public class FieldExtractor{
     private final Integer end;
     private String targetPropertyName;
 
-    public FieldExtractor(Integer _begin,Integer _end,String _target){
+    public FieldExtractor(int _begin,int _end,String _target){
         this.begin = _begin;
         this.end = _end;
         this.targetPropertyName = _target;
 
     }
     public void extractFiled(String line, Object targetObject){
-        String value = line.substring(begin, end - begin -1);
-        setValue(targetObject, value);
+        String value = line.substring(begin, end);
+       // setValue(targetObject, value);
     }
-    private List<String> setValue(Object targetObject, String value){
-        Field[] fields = targetObject.getClass().getDeclaredFields();
-        List<String> actualFieldNames = getFieldNames(fields);
-        return actualFieldNames;
+    //hier kommt reflection zum einsatz - LESEN
+  //  private Method setValue(Object targetObject, String value){
 
-    }
-    private List<String> getFieldNames(Field[] fields) {
-        List<String> fieldNames = new ArrayList<>();
-        for (Field field : fields)
-            fieldNames.add(field.getName());
-        return fieldNames;
-    }
+        //return actualFieldNames;
 
+   // }
 }
