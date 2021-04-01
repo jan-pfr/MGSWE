@@ -6,20 +6,20 @@ public class ServiceCall {
     private String serviceCallCode;
     private String dateOfCall;
 
-    public String getCustomerID() { return customerID; }
+    public String getcustomerID() { return customerID; }
 
-    public String getServiceCallCode() { return serviceCallCode; }
+    public String getSsrviceCallCode() { return serviceCallCode; }
 
-    public String getDateOfCall() { return dateOfCall; }
+    public String getdateOfCall() { return dateOfCall; }
 
-    public String getCustomerName() { return customerName; }
+    public String getcustomerName() { return customerName; }
 
-    public void setCustomerName(String customerName) { this.customerName = customerName; }
+    public void setcustomerName(String customerName) { this.customerName = customerName; }
 
-    public void setCustomerID(String customerID) { this.customerID = customerID; }
+    public void setcustomerID(String customerID) { this.customerID = customerID; }
 
-    public void setServiceCallCode(String serviceCallCode) { this.serviceCallCode = serviceCallCode; }
+    public void setserviceCallCode(String serviceCallCode) { this.serviceCallCode = serviceCallCode; }
 
-    public void setDateOfCall(String dateOfCall) { this.dateOfCall = dateOfCall; }
+    public void setdateOfCall(String dateOfCall) { this.dateOfCall = dateOfCall; }
 
 }

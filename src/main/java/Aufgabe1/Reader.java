@@ -29,9 +29,8 @@ public class Reader {
         if(null == strategy){
             throw new Exception("Unable to find strategy");
         }
-        System.out.println(strategy.code);
         //hier wird die Zeile mit der entsprechenden Regel verarbeitet
-        result.add(strategy.process(line));
+        System.out.println(strategy.process(line));
 
     }
     //helper method

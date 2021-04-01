@@ -1,7 +1,6 @@
 package Aufgabe1;
 
 import java.lang.reflect.*;
-import java.util.*;
 
 public class FieldExtractor{
     private final Integer begin;
@@ -14,14 +13,13 @@ public class FieldExtractor{
         this.targetPropertyName = _target;
 
     }
-    public void extractFiled(String line, Object targetObject){
+    public void extractFiled(String line, Object targetObject) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException {
         String value = line.substring(begin, end);
-       // setValue(targetObject, value);
+        setValue(targetObject, value);
     }
     //hier kommt reflection zum einsatz - LESEN
-  //  private Method setValue(Object targetObject, String value){
-
-        //return actualFieldNames;
-
-   // }
+    private void setValue(Object targetObject, String value) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+        Method method = targetObject.getClass().getMethod("set" + targetPropertyName, String.class);
+        method.invoke(targetObject, value);
+    }
 }
