@@ -14,8 +14,8 @@ public class FieldExtractor{
 
     }
     public void extractFiled(String line, Object targetObject) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException {
-        String value = line.substring(begin, end);
-        setValue(targetObject, value);
+        String value = line.substring(begin, end + 1);
+        setValue(targetObject, value.trim());
     }
     //hier kommt reflection zum einsatz - LESEN
     private void setValue(Object targetObject, String value) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {

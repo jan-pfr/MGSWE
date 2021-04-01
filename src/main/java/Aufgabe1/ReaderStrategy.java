@@ -23,8 +23,8 @@ public class ReaderStrategy {
         //FieldExtractor = Ding, was die Regel umsetzt
         fieldExtractor.add(new FieldExtractor(begin, end, target));
     }
-    public Object process(String line) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException {
-       //.getDeclardConstructor = gibt den Constructor der target Klasse zurück.
+    public Object process(String line) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
+        //.getDeclardConstructor = gibt den Constructor der target Klasse zurück.
         // .netInstance() macht mithilfe des Konstruktors ein Objekt.
         Object result = target.getDeclaredConstructor().newInstance();
         //for-each schleife

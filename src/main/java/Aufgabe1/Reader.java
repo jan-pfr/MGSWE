@@ -30,7 +30,7 @@ public class Reader {
             throw new Exception("Unable to find strategy");
         }
         //hier wird die Zeile mit der entsprechenden Regel verarbeitet
-        System.out.println(strategy.process(line));
+        result.add(strategy.process(line));
 
     }
     //helper method

@@ -9,7 +9,7 @@ public class Main {
         Main main = new Main();
         Reader reader = new Reader();
         main.configure(reader);
-        reader.process(a1);
+        System.out.println(reader.process(a1).toString());
 
 
     }
@@ -32,6 +32,12 @@ public class Main {
         readerStrategy.addFieldExtractor(4, 8, "customerID");
         readerStrategy.addFieldExtractor(9, 22, "customerName");
         readerStrategy.addFieldExtractor(23, 30, "dateOfCall");
+        return readerStrategy;
+    }
+    private ReaderStrategy configureChessNotation() throws NoSuchFieldException{
+        ReaderStrategy readerStrategy = new ReaderStrategy("MOVE", ChessMove.class);
+        readerStrategy.addFieldExtractor(9,13,"whiteMove");
+        readerStrategy.addFieldExtractor(14,18,"blackMove");
         return readerStrategy;
     }
 }

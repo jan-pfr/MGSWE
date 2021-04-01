@@ -1,5 +1,7 @@
 package Aufgabe1;
-
+/*
+To String einfügen
+ */
 public class ServiceCall {
     private String customerName;
     private String customerID;
@@ -22,4 +24,13 @@ public class ServiceCall {
 
     public void setdateOfCall(String dateOfCall) { this.dateOfCall = dateOfCall; }
 
+    @Override
+    public String toString() {
+        return "ServiceCall{" +
+                "customerName='" + customerName + '\'' +
+                ", customerID='" + customerID + '\'' +
+                ", serviceCallCode='" + serviceCallCode + '\'' +
+                ", dateOfCall='" + dateOfCall + '\'' +
+                '}';
+    }
 }
