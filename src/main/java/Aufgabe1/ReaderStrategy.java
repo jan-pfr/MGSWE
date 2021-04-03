@@ -8,12 +8,14 @@ import java.util.List;
 public class ReaderStrategy {
     public String code;
     private Class target;
+    private String[] pattern;
     //In der Liste werden die Regeln gespeichert
     private List<FieldExtractor> fieldExtractor = new ArrayList<>();
     //create a new instance of the class
-    public ReaderStrategy (String _code, Class _target){
+    public ReaderStrategy (String _code, Class _target, String... _pattern){
         this.code = _code;
         this.target = _target;
+        this.pattern = _pattern;
     }
     //Hier werden die Regel einer Strategie dem Objekt der Strategie hinzugefügt
     public void addFieldExtractor(Integer begin, Integer end, String target) throws NoSuchFieldException {
@@ -21,7 +23,7 @@ public class ReaderStrategy {
             throw new NoSuchFieldException(target);
         }
         //FieldExtractor = Ding, was die Regel umsetzt
-        fieldExtractor.add(new FieldExtractor(begin, end, target));
+        fieldExtractor.add(new FieldExtractor(begin, end, target, this.pattern));
     }
     public Object process(String line) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
         //.getDeclardConstructor = gibt den Constructor der target Klasse zurück.

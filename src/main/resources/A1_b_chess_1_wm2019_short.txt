@@ -1,6 +1,5 @@
 #White: whiltePlayer="magnus-carlsen"
 #Black: blackPlayer="fabiano-caruana"
-#0-8:Move,9-13:white, 14-18:black
 #12345678901234567890123456789012345678901234567890 
 MOVE1.    e4   c5   
 MOVE2.   Sf3  Sc6   
