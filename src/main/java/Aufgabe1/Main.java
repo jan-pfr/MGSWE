@@ -38,7 +38,7 @@ public class Main {
         return readerStrategy;
     }
     private ReaderStrategy configureChessNotation() throws Exception{
-        String pattern ="([KDTLS]|[a-h]|O|\\s)([KDTLS]|x|\\d|[a-h]|-)([a-h]|\\d|#|[+]|O|\\s|x)(\\s|\\d|#|[+]|-|[a-h])(\\s|#|[+]|O|\\d)";
+        String pattern ="([a-h]|\\s|[KDTLSO])([a-h]|\\d|[KDTLSx-]|\\s)([a-h]|\\s|[+#xO]|\\d)([a-h]|\\s|\\d|[+#-])(\\s|[+#O]|\\d)";
         ReaderStrategy readerStrategy = new ReaderStrategy("MOVE", ChessMove.class, pattern);
         readerStrategy.addFieldExtractor(4,8,"ID");
         readerStrategy.addFieldExtractor(9,13,"WhiteMove");
@@ -46,3 +46,4 @@ public class Main {
         return readerStrategy;
     }
 }
+
