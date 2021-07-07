@@ -27,7 +27,7 @@ public class ServiceCall {
     @Override
     public String toString() {
         return "ServiceCall{" +
-                "customerName='" + customerName + '\'' +
+                "customerName='" + customerName.trim() + '\'' +
                 ", customerID='" + customerID + '\'' +
                 ", serviceCallCode='" + serviceCallCode + '\'' +
                 ", dateOfCall='" + dateOfCall + '\'' +

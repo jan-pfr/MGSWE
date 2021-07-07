@@ -23,7 +23,7 @@ public class Usage {
     public String toString() {
         return "Usage{" +
                 "customerID='" + customerID + '\'' +
-                ", customerName='" + customerName + '\'' +
+                ", customerName='" + customerName.trim() + '\'' +
                 ", dateOfCall='" + dateOfCall + '\'' +
                 '}';
     }
